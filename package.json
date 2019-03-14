@@ -1,6 +1,9 @@
 {
   "name": "chrome_extension_cra",
   "version": "0.1.0",
+  "engines": {
+    "node": "10.13.0"
+  },
   "private": true,
   "dependencies": {
     "node-sass": "^4.11.0",

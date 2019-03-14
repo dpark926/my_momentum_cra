@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import Loader from "react-loader";
 import ArrowUpward from "rmdi/lib/ArrowUpward";
 import ArrowDownward from "rmdi/lib/ArrowDownward";

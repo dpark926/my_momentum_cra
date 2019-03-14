@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import Link from "next/link";
 import { Days } from "../src/date";
 import { weatherIcons } from "../src/weatherIcons";
 import { keys } from "../config/keys";

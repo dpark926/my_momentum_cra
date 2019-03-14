@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
 import Loader from "react-loader";
 import ArrowUpward from "rmdi/lib/ArrowUpward";
 import ArrowDownward from "rmdi/lib/ArrowDownward";
@@ -70,14 +69,12 @@ class Stocks extends Component {
               cryptoNewsData.results.map((news, idx) => {
                 return (
                   <div key={idx} className="stocks-item p1">
-                    <Link href={news.url}>
-                      <a target="_blank">
-                        {news.title}
-                        <span className="nowrap">{` - ${
-                          news.source.domain
-                        }`}</span>
-                      </a>
-                    </Link>
+                    <a href={news.url} target="_blank">
+                      {news.title}
+                      <span className="nowrap">{` - ${
+                        news.source.domain
+                      }`}</span>
+                    </a>
                     <div className="flex pt1">
                       {news.votes.liked > 0 && (
                         <div className="flex pr2 green">

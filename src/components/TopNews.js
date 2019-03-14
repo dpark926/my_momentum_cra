@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
 import Loader from "react-loader";
 import { keys } from "../config/keys";
 import "../styles/topnews.scss";
@@ -106,9 +105,9 @@ class TopNews extends Component {
               newsData.articles.map((news, idx) => {
                 return (
                   <div key={idx} className="news-item p1">
-                    <Link href={news.url}>
-                      <a target="_blank">{news.title}</a>
-                    </Link>
+                    <a href={news.url} target="_blank">
+                      {news.title}
+                    </a>
                   </div>
                 );
               })}
@@ -117,9 +116,9 @@ class TopNews extends Component {
               newsData.articles.map((news, idx) => {
                 return (
                   <div key={idx} className="news-item p1">
-                    <Link href={news.url}>
-                      <a target="_blank">{news.title}</a>
-                    </Link>
+                    <a href={news.url} target="_blank">
+                      {news.title}
+                    </a>
                   </div>
                 );
               })}
@@ -128,9 +127,9 @@ class TopNews extends Component {
               newsData.articles.map((news, idx) => {
                 return (
                   <div key={idx} className="news-item p1">
-                    <Link href={news.url}>
-                      <a target="_blank">{news.title}</a>
-                    </Link>
+                    <a href={news.url} target="_blank">
+                      {news.title}
+                    </a>
                   </div>
                 );
               })}
@@ -139,9 +138,9 @@ class TopNews extends Component {
               newsData.articles.map((news, idx) => {
                 return (
                   <div key={idx} className="news-item p1">
-                    <Link href={news.url}>
-                      <a target="_blank">{news.title}</a>
-                    </Link>
+                    <a href={news.url} target="_blank">
+                      {news.title}
+                    </a>
                   </div>
                 );
               })}

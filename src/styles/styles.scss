@@ -1,0 +1,59 @@
+@import "./variables";
+
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: $light-gray;
+
+  &:hover {
+    text-decoration: underline;
+    color: $blue;
+  }
+}
+
+.white {
+  color: $white;
+}
+
+.light-gray {
+  color: $light-gray;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
+
+.red {
+  color: $red;
+}
+
+.orange {
+  color: $orange;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.bg-black {
+  background: $black;
+}
+
+.bg-dark-gray {
+  background: $dark-gray;
+}

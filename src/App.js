@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Crypto from "./components/Crypto";
 import Stocks from "./components/Stocks";
 import TopNews from "./components/TopNews";
@@ -21,7 +21,7 @@ class App extends Component {
     const { weatherCityModalOpen, cryptoModalOpen } = this.state;
 
     return (
-      <Router>
+      <BrowserRouter>
         <div
           className="inconsolata flex bg-black white absolute overflow-hidden col-12"
           style={{ height: "100vh" }}
@@ -47,7 +47,7 @@ class App extends Component {
             </div>
           )}
         </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
